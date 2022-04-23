@@ -9,9 +9,9 @@ jobs:
               with: 
                 node-version: '14'
             - name: Install node_modules
-              run: yarn 
+              run: npm 
             - name: Build the project 
-              run: yarn build
+              run: npm run build
             - name: Sets the vercel env
               run: |
                 cd build
@@ -19,7 +19,7 @@ jobs:
                 touch project.json
                 echo '{"projectId":"prj_VDRaCXahzxocHsw5lvnxoervMCHO",orgId:"PfsyJaN88sVDiPJbo7ooPcxI"}' > project.json
             - name: Deploying the project
-              run: yarn deploy
+              run: npm run deploy
             - name: Setup finish
               run: echo "hurray!"
 
