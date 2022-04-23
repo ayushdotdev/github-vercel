@@ -19,7 +19,7 @@ jobs:
                 touch project.json
                 echo '{"projectId":"prj_VDRaCXahzxocHsw5lvnxoervMCHO",orgId:"PfsyJaN88sVDiPJbo7ooPcxI"}' > project.json
             - name: Deploying the project
-              run: npm run deploy
+              run: yarn deploy
             - name: Setup finish
               run: echo "hurray!"
 
