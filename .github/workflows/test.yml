@@ -9,18 +9,16 @@ jobs:
               with: 
                 node-version: '16'
             - name: Install node_modules
-              run: yarn
+              run: yarn 
             - name: Build the project 
-              run: npm run build
+              run: yarn build
             - name: Sets the vercel env
               run: |
                 cd build
-                mkdir .vercel
-                touch project.json
-                echo '{"projectId":"prj_VDRaCXahzxocHsw5lvnxoervMCHO",orgId:"PfsyJaN88sVDiPJbo7ooPcxI"}' > project.json
+                mkdir project.json
+                echo {"orgId":"PfsyJaN88sVDiPJbo7ooPcxI","projectId":"prj_VDRaCXahzxocHsw5lvnxoervMCHO"}
             - name: Deploying the project
               run: yarn deploy
-            - name: Setup finish
+            - name: Setup finish      
               run: echo "hurray!"
-
 

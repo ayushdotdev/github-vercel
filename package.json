@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "vc --prod --token=ydfK0QVrcRoNWl2nosI8p18T"
+    "deploy":"vercel --prod --token=13f8fe0d-b1a2-4cbf-9d14-4ff1fa4f8fdd"
   },
   "eslintConfig": {
     "extends": [
